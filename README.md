@@ -46,17 +46,28 @@ Features for a game must only use information available **before that game start
 
 ## Quick Start
 
-1. Create a virtual environment.
-2. Install dependencies:
+1. Create a Python virtual environment:
+
+```bash
+python3 -m venv .venv
+```
+
+2. Activate the virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Place the raw CSV in `data/raw/`.
-4. Run ingestion/validation and feature engineering.
-5. Train models with MLflow tracking.
-6. Launch the Streamlit app:
+4. Place the raw CSV in `data/raw/`.
+5. Run ingestion/validation and feature engineering.
+6. Train models with MLflow tracking.
+7. Launch the Streamlit app:
 
 ```bash
 streamlit run app/streamlit_app.py
