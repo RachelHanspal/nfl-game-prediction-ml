@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models and experiment outputs
+models/*
+!models/.gitkeep
+mlruns/
+mlartifacts/
+
+# Environment files
+.env
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
